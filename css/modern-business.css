@@ -1,0 +1,372 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ *,
+ :before,
+ :after {
+     -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+             box-sizing: border-box;
+ }
+
+ html,
+ body {
+     min-height: 100%;
+ }
+
+ body {
+    font-family: 'Oswald', sans-serif; 
+    /* color: #fff;*/
+  background-color: #020202;
+ }
+
+ .wrapper {
+     text-align: center;
+
+ }
+ .wrapper1 {
+    display: flex;
+    flex-direction: row;
+
+ }
+
+ .title {
+     font-size: 2em;
+     position: relative;
+     margin: 0 auto 1em;
+     padding: 1em 1em .25em 1em;
+     text-align: center;
+     text-transform: uppercase;
+ }
+ .title:after {
+     position: absolute;
+     top: 100%;
+     left: 50%;
+     width: 240px;
+     height: 4px;
+     margin-left: -120px;
+     content: '';
+     background-color: #fff;
+ }
+ .clip-text1 {
+     font-size: 2em;
+     font-weight: bold;
+     line-height: 1;
+     position: relative;
+     padding: .5em .75em;
+     margin: 0 auto;
+     text-align: center;
+
+
+      flex-direction: row;
+     /* Color fallback */
+     color: #fff;
+     -webkit-background-clip: text;
+
+     -webkit-text-fill-color: transparent;
+ }
+ .clip-text1:before,
+ .clip-text1:after {
+     position: absolute;
+     content: '';
+ }
+
+ /* Background */
+ .clip-text1:before {
+     z-index: -2;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background-image: inherit;
+     border-radius: 1px;
+ }
+
+ /* Text Background (black zone) */
+ .clip-text1:after {
+     position: absolute;
+     z-index: -1;
+     top: .125em;
+     right: .125em;
+     bottom: .125em;
+     left: .125em;
+     background-color: #000;
+border-radius: 5px;
+ }
+
+ /* Change the background position to display letter when the black zone isn't here */
+ .clip-text1--no-textzone:before {
+     background-position: -.65em 0;
+ }
+
+ .clip-text1--no-textzone:after {
+     content: none;
+ }
+
+ /* Use Background-size cover for photo background and no-repeat background */
+ .clip-text1--cover,
+ .clip-text1--cover:before {
+     background-repeat: no-repeat;
+     -webkit-background-size: cover;
+             background-size: cover;
+   background-position: 50% 50%;
+ }
+ /* Clip text element */
+ .clip-text {
+     font-size: 5em;
+     font-weight: bold;
+     line-height: 1;
+     position: relative;
+     display: inline-block;
+     margin: .25em;
+     padding: .5em .75em;
+     text-align: center;
+     /* Color fallback */
+     color: #fff;
+     -webkit-background-clip: text;
+
+     -webkit-text-fill-color: transparent;
+ }
+
+ .clip-text:before,
+ .clip-text:after {
+     position: absolute;
+     content: '';
+ }
+
+ /* Background */
+ .clip-text:before {
+     z-index: -2;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background-image: inherit;
+     border-radius: 5px;
+	 
+ }
+
+ /* Text Background (black zone) */
+ .clip-text:after {
+     position: absolute;
+     z-index: -1;
+     top: .125em;
+     right: .125em;
+     bottom: .125em;
+     left: .125em;
+     background-color: black;
+border-radius: 25px;
+	 
+ }
+
+ /* Change the background position to display letter when the black zone isn't here */
+ .clip-text--no-textzone:before {
+     background-position: -.65em 0;
+ }
+
+ .clip-text--no-textzone:after {
+     content: none;
+ }
+
+ /* Use Background-size cover for photo background and no-repeat background */
+ .clip-text--cover,
+ .clip-text--cover:before {
+     background-repeat: no-repeat;
+     -webkit-background-size: cover;
+             background-size: cover;
+   background-position: 50% 50%;
+ }
+
+ .clip-text_one {
+	 background-image: url( "../Images/lp.jpg");
+
+	 background-color: lightblue;
+
+	 margin: 0 auto;
+ }
+
+ .clip-text_two {
+     background-image: url("../Images/ex5.gif");
+ }
+ .flex-container {
+   text-align: center;
+    display: flex;
+    flex-direction: row;
+ }
+
+ .clip-text_three {
+     background-image: url("../Images/ex4.gif");
+	 margin: 0 auto;
+ }
+/*
+ .clip-text_four {
+     background-image: url(http://hd.wallpaperswide.com/thumbs/abstract_black_design_2-t2.jpg);
+ }
+
+ .clip-text_five {
+     background-image: url(http://hd.wallpaperswide.com/thumbs/super_nova-t2.jpg);
+ }
+
+ .clip-text_six {
+     background-image: url(https://www.hdwallpapers.net/previews/3d-colorful-spiral-1057.jpg);
+ }
+
+ .clip-text_seven {
+     background-image: url(http://cdn8.staztic.com/app/a/6278/6278761/hd-abstract-wallpapers-1-0-s-307x512.jpg);
+ }
+
+ .clip-text_eight {
+     background-image: url(http://lorempixel.com/410/200/people);
+ }
+
+ .clip-text_nine {
+     background-image: url(https://wallpaperbrowse.com/media/images/background-pictures-10.jpg);
+ }
+
+ .clip-text_ten {
+     background-image: url(http://lorempixel.com/480/200/nightlife/8);
+ }
+
+ .clip-text_eleven {
+     background-image: url(http://www.wallcoo.net/cartoon/abstract_rainbow_colours_13_1920x1200/images/Abstract_Rainbow_colour_pattern_4116.jpg);
+     background-size: cover;
+ }
+
+ .clip-text_twelve {
+     background-image: url(http://hd.wallpaperswide.com/thumbs/abstract_wallpaper_for_mac-t2.jpg);
+ }
+
+ .clip-text_thirteen {
+     background-image: url(https://picsum.photos/200/300/?random);
+ }
+
+ .clip-text_fourteen {
+     background-image: url(http://hd.wallpaperswide.com/thumbs/awesome_colorful_paint_3d-t2.jpg);
+ }
+
+ .clip-text_fifteen {
+     background-image: url(http://lorempixel.com/480/200/nightlife/5);
+ } */
+
+body{
+  padding-top: 56px;
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.navbar-brand {
+
+}
+.nav-item{
+
+}
+.col-md-8{
+	
+  padding-top: 80px;
+}
+.col-md-4{
+  padding-top: 80px;
+	padding-bottom:80px;
+}
+.my-4{
+color: mediumturquoise;
+text-shadow: 3px 3px darkslategrey;
+}
+.row{
+  color: white;
+}
+.skills{
+  padding-left: 2em;
+
+}
+.l1 {
+  color:mediumorchid;
+}
+.l2 {
+  color:slateblue;
+}
+.l3{
+  color:tomato;
+}
+.l4 {
+  color:deepskyblue;
+}
+.l5{
+  color:darkviolet;
+}
+.l6{
+  color:beige;
+}
+.l7{
+  color:firebrick;
+}
+.my-3{
+	color: mediumturquoise;
+text-shadow: 3px 3px darkslategrey;
+}
+.download {
+	text-shadow: 3px 3px darkslategrey;
+	color: palegoldenrod;
+	
+}
+.cado {
+	width: 770px;
+}
+.py-5  {
+	padding-top: 30px;
+}
+
+.game-spacing {
+   
+    top: 50%;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: -100px;
+position:relative;
+	width:1000px; 
+	height:600px;
+}
+.game-spacing1 {
+   
+    top: 50%;
+    left: 50%;
+    margin-left: -380px;
+    margin-top: -100px;
+position:relative;
+	width:750px; 
+	height:600px;
+}
+
+.slide1 {
+	background-image: url("../Images/webdesign1.png")
+}
+.slide2 {
+	background-image: url("../Images/programming1.png")
+}
+.slide3 {
+	background-image: url("../Images/gamedesign1.png")
+}
+
+
+
+
+
