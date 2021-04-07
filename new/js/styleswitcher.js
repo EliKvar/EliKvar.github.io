@@ -109,7 +109,7 @@ window.onload = function(e) {
 	var title = "yellowgreen";
 	setActiveStyleSheet(title);
 
-	
+
 }
 
 
@@ -127,75 +127,5 @@ jQuery("input.dark_switch").bind("click", function() {
 		jQuery("body").removeClass('dark');
 		createCookie("is_dark", '', -1);
 		jQuery('body').removeClass('transparent');
-	}
-});
-
-
-
-
-
-/**
-	LAYOUT STYLE [wide|boxed]
-**/
-jQuery("input.boxed_switch").bind("click", function() {
-	var boxed_switch = jQuery(this).attr('value');
-
-	if(boxed_switch == 'boxed') {
-		jQuery("body").removeClass('boxed');
-		jQuery("body").addClass('boxed');
-		createCookie("is_boxed", 'true', 365);
-	} else {
-		jQuery("body").removeClass('boxed');
-		createCookie("is_boxed", '', -1);
-		jQuery('body').removeClass('transparent');
-	}
-});
-
-
-
-/**
-	SEPARATOR STYLE [Normal|Skew|Reversed Skew|Double Diagonal|Big Triangle]
-**/
-jQuery("input.separator_switch").bind("click", function() {
-	var separator_switch = jQuery(this).attr('value');
-
-	if(separator_switch == 'skew') {
-		jQuery("body").removeClass('reversed-skew');
-		jQuery("body").removeClass('double-diagonal');
-		jQuery("body").removeClass('big-triangle');
-		jQuery("body").addClass('skew');
-		createCookie("is_skew", 'true', 365);
-	}
-	
-	else if(separator_switch == 'reversed-skew') {
-		jQuery("body").removeClass('skew');
-		jQuery("body").removeClass('double-diagonal');
-		jQuery("body").removeClass('big-triangle');
-		jQuery("body").addClass('reversed-skew');
-		createCookie("is_reversed_skew", 'true', 365);
-	}
-	
-	else if(separator_switch == 'double-diagonal') {
-		jQuery("body").removeClass('skew');
-		jQuery("body").removeClass('reversed-skew');
-		jQuery("body").removeClass('big-triangle');
-		jQuery("body").addClass('double-diagonal');
-		createCookie("is_double_diagonal", 'true', 365);
-	}
-	
-	else if(separator_switch == 'big-triangle') {
-		jQuery("body").removeClass('skew');
-		jQuery("body").removeClass('reversed-skew');
-		jQuery("body").removeClass('double-diagonal');
-		jQuery("body").addClass('big-triangle');
-		createCookie("is_big_triangle", 'true', 365);
-	}
-	
-	else {
-		jQuery("body").removeClass('skew');
-		jQuery("body").removeClass('reversed-skew');
-		jQuery("body").removeClass('double-diagonal');
-		jQuery("body").removeClass('big-triangle');
-		createCookie("is_normal", '', -1);
 	}
 });
